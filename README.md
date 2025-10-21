@@ -121,4 +121,4 @@ Puis relance Docker Desktop.
 
 ## 👨‍💻 Auteur
 
-Développé par **Lily** — Étudiante ingénieure en Réseaux & Télécoms 🌐  
+Développé par **Lily**
