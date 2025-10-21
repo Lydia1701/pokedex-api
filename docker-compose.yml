@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  pokedex-api:
+    build: .
+    container_name: pokedex_api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./pokedex.db
+      - WEATHER_API_URL=https://api.openweathermap.org/data/2.5/weather
+      - WEATHER_API_KEY=ton_api_key_openweather
+      - DEFAULT_CITY=Paris,FR
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7.2
+    container_name: pokedex_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:

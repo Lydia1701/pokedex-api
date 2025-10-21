@@ -1,0 +1,56 @@
+# --- Environnements virtuels ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Fichiers Python compilés ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Fichiers temporaires ---
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# --- Configurations locales ---
+.DS_Store
+*.env
+.env
+.env.local
+*.secret
+*.bak
+
+# --- IDE / éditeurs ---
+.vscode/
+.idea/
+*.swp
+
+# --- Dossiers de build ---
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# --- Tests ---
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+
+# --- Docker ---
+# Dockerfiles ou dossiers temporaires
+docker-compose.override.yml
+docker-compose.local.yml
+.docker/
+Dockerfile~
+.dockerignore
+#
